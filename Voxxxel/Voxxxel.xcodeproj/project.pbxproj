@@ -11,9 +11,9 @@
 		F71F4ECF1F93BADF009CD84C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F71F4ECB1F93BADF009CD84C /* Assets.xcassets */; };
 		F71F4ED01F93BADF009CD84C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F71F4ECC1F93BADF009CD84C /* LaunchScreen.storyboard */; };
 		F71F4ED51F93BB08009CD84C /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F71F4ED41F93BB08009CD84C /* CloudKit.framework */; };
-		F71F4ED91F93BC1A009CD84C /* ApplicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71F4ED81F93BC1A009CD84C /* ApplicationManager.swift */; };
 		F71F4F691F93C37F009CD84C /* ARVoxelKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F71F4F641F93C35E009CD84C /* ARVoxelKit.framework */; };
 		F71F4F6A1F93C37F009CD84C /* ARVoxelKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F71F4F641F93C35E009CD84C /* ARVoxelKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F71F4F781F93C563009CD84C /* ApplicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71F4F771F93C563009CD84C /* ApplicationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,8 +78,8 @@
 		F71F4ECE1F93BADF009CD84C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F71F4ED41F93BB08009CD84C /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		F71F4ED61F93BB61009CD84C /* Voxxxel.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = Voxxxel.entitlements; sourceTree = "<group>"; };
-		F71F4ED81F93BC1A009CD84C /* ApplicationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationManager.swift; sourceTree = "<group>"; };
 		F71F4F5D1F93C35E009CD84C /* ARVoxelKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ARVoxelKit.xcodeproj; path = ../ARVoxelKit/ARVoxelKit/ARVoxelKit.xcodeproj; sourceTree = "<group>"; };
+		F71F4F771F93C563009CD84C /* ApplicationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,49 +143,10 @@
 		F71F4EC41F93BADF009CD84C /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				F71F4EC91F93BADF009CD84C /* Flow */,
-				F71F4EC71F93BADF009CD84C /* Modules */,
-				F71F4EC61F93BADF009CD84C /* Models */,
-				F71F4EC51F93BADF009CD84C /* Managers */,
-				F71F4EC81F93BADF009CD84C /* Views */,
+				F71F4F791F93C567009CD84C /* Modules */,
+				F71F4F761F93C563009CD84C /* Flow */,
 			);
 			path = Application;
-			sourceTree = "<group>";
-		};
-		F71F4EC51F93BADF009CD84C /* Managers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Managers;
-			sourceTree = "<group>";
-		};
-		F71F4EC61F93BADF009CD84C /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		F71F4EC71F93BADF009CD84C /* Modules */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Modules;
-			sourceTree = "<group>";
-		};
-		F71F4EC81F93BADF009CD84C /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		F71F4EC91F93BADF009CD84C /* Flow */ = {
-			isa = PBXGroup;
-			children = (
-				F71F4ED81F93BC1A009CD84C /* ApplicationManager.swift */,
-			);
-			path = Flow;
 			sourceTree = "<group>";
 		};
 		F71F4ECA1F93BADF009CD84C /* Resources */ = {
@@ -215,6 +176,21 @@
 				F71F4F681F93C35E009CD84C /* ARVoxelKitExample.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		F71F4F761F93C563009CD84C /* Flow */ = {
+			isa = PBXGroup;
+			children = (
+				F71F4F771F93C563009CD84C /* ApplicationManager.swift */,
+			);
+			path = Flow;
+			sourceTree = "<group>";
+		};
+		F71F4F791F93C567009CD84C /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -363,7 +339,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F71F4ED91F93BC1A009CD84C /* ApplicationManager.swift in Sources */,
+				F71F4F781F93C563009CD84C /* ApplicationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

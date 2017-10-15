@@ -11,6 +11,7 @@ import UIKit
 
 @UIApplicationMain
 class ApplicationManager: NSObject {
+    
     private static var singleInstance: ApplicationManager = ApplicationManager()
     
     var window: UIWindow?
@@ -31,6 +32,4 @@ class ApplicationManager: NSObject {
 }
 
 
-extension ApplicationManager: UIApplicationDelegate {
-    
-}
+extension ApplicationManager: UIApplicationDelegate { }
