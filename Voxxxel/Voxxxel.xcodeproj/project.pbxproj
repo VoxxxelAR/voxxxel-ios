@@ -12,6 +12,8 @@
 		F71F4ED01F93BADF009CD84C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F71F4ECC1F93BADF009CD84C /* LaunchScreen.storyboard */; };
 		F71F4ED51F93BB08009CD84C /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F71F4ED41F93BB08009CD84C /* CloudKit.framework */; };
 		F71F4ED91F93BC1A009CD84C /* ApplicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71F4ED81F93BC1A009CD84C /* ApplicationManager.swift */; };
+		F71F4F691F93C37F009CD84C /* ARVoxelKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F71F4F641F93C35E009CD84C /* ARVoxelKit.framework */; };
+		F71F4F6A1F93C37F009CD84C /* ARVoxelKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F71F4F641F93C35E009CD84C /* ARVoxelKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,6 +24,34 @@
 			remoteGlobalIDString = F71F4EA01F93BA80009CD84C;
 			remoteInfo = Voxxxel;
 		};
+		F71F4F631F93C35E009CD84C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F71F4F5D1F93C35E009CD84C /* ARVoxelKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F77B328A1F7ABD8D004259B8;
+			remoteInfo = ARVoxelKit;
+		};
+		F71F4F651F93C35E009CD84C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F71F4F5D1F93C35E009CD84C /* ARVoxelKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F77B32931F7ABD8D004259B8;
+			remoteInfo = ARVoxelKitTests;
+		};
+		F71F4F671F93C35E009CD84C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F71F4F5D1F93C35E009CD84C /* ARVoxelKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F7F9EEE31F8482BE00987E03;
+			remoteInfo = ARVoxelKitExample;
+		};
+		F71F4F6B1F93C37F009CD84C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F71F4F5D1F93C35E009CD84C /* ARVoxelKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F77B32891F7ABD8D004259B8;
+			remoteInfo = ARVoxelKit;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +61,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				F71F4F6A1F93C37F009CD84C /* ARVoxelKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -48,6 +79,7 @@
 		F71F4ED41F93BB08009CD84C /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		F71F4ED61F93BB61009CD84C /* Voxxxel.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = Voxxxel.entitlements; sourceTree = "<group>"; };
 		F71F4ED81F93BC1A009CD84C /* ApplicationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationManager.swift; sourceTree = "<group>"; };
+		F71F4F5D1F93C35E009CD84C /* ARVoxelKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ARVoxelKit.xcodeproj; path = ../ARVoxelKit/ARVoxelKit/ARVoxelKit.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +88,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F71F4ED51F93BB08009CD84C /* CloudKit.framework in Frameworks */,
+				F71F4F691F93C37F009CD84C /* ARVoxelKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +105,7 @@
 		F71F4E981F93BA80009CD84C = {
 			isa = PBXGroup;
 			children = (
+				F71F4F5D1F93C35E009CD84C /* ARVoxelKit.xcodeproj */,
 				F71F4EA31F93BA80009CD84C /* Voxxxel */,
 				F71F4EB81F93BA81009CD84C /* VoxxxelTests */,
 				F71F4EA21F93BA80009CD84C /* Products */,
@@ -173,6 +207,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F71F4F5E1F93C35E009CD84C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F71F4F641F93C35E009CD84C /* ARVoxelKit.framework */,
+				F71F4F661F93C35E009CD84C /* ARVoxelKitTests.xctest */,
+				F71F4F681F93C35E009CD84C /* ARVoxelKitExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -188,6 +232,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				F71F4F6C1F93C37F009CD84C /* PBXTargetDependency */,
 			);
 			name = Voxxxel;
 			productName = Voxxxel;
@@ -256,6 +301,12 @@
 			mainGroup = F71F4E981F93BA80009CD84C;
 			productRefGroup = F71F4EA21F93BA80009CD84C /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F71F4F5E1F93C35E009CD84C /* Products */;
+					ProjectRef = F71F4F5D1F93C35E009CD84C /* ARVoxelKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				F71F4EA01F93BA80009CD84C /* Voxxxel */,
@@ -263,6 +314,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F71F4F641F93C35E009CD84C /* ARVoxelKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ARVoxelKit.framework;
+			remoteRef = F71F4F631F93C35E009CD84C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F71F4F661F93C35E009CD84C /* ARVoxelKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ARVoxelKitTests.xctest;
+			remoteRef = F71F4F651F93C35E009CD84C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F71F4F681F93C35E009CD84C /* ARVoxelKitExample.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = ARVoxelKitExample.app;
+			remoteRef = F71F4F671F93C35E009CD84C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F71F4E9F1F93BA80009CD84C /* Resources */ = {
@@ -307,6 +382,11 @@
 			isa = PBXTargetDependency;
 			target = F71F4EA01F93BA80009CD84C /* Voxxxel */;
 			targetProxy = F71F4EB61F93BA81009CD84C /* PBXContainerItemProxy */;
+		};
+		F71F4F6C1F93C37F009CD84C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ARVoxelKit;
+			targetProxy = F71F4F6B1F93C37F009CD84C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
