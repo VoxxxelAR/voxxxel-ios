@@ -1,0 +1,3 @@
+[submodule "ARVoxelKit"]
+	path = ARVoxelKit
+	url = https://github.com/VoxxxelAR/ARVoxelKit
