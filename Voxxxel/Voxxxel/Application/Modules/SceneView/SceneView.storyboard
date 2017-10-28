@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Scene View Controller-->
+        <!--Initial View Controller-->
         <scene sceneID="7jg-1W-dlV">
             <objects>
                 <viewController id="wTi-bU-uMM" customClass="SceneViewController" customModule="Voxxxel" customModuleProvider="target" sceneMemberID="viewController">
@@ -32,6 +32,11 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xjQ-W9-d0d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="OOF-bZ-hwb" customClass="ApplicationManager" customModule="Voxxxel" customModuleProvider="target">
+                    <connections>
+                        <outlet property="initialViewController" destination="wTi-bU-uMM" id="dt9-bf-OoY"/>
+                    </connections>
+                </customObject>
             </objects>
             <point key="canvasLocation" x="53.600000000000001" y="354.87256371814095"/>
         </scene>
