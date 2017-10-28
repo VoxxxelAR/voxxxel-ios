@@ -16,7 +16,9 @@ class ApplicationManager: NSObject {
     
     var window: UIWindow?
     
-    @IBOutlet weak var rootViewController: UIViewController! {
+    var initialModule: ModuleInput!
+    
+    @IBOutlet weak var initialViewController: UIViewController! {
         didSet { configure() }
     }
     
@@ -27,7 +29,7 @@ class ApplicationManager: NSObject {
     }
     
     func configure() {
-        
+        initialModule = try? SceneViewRouter.moduleInput(with: initialViewController)
     }
 }
 
