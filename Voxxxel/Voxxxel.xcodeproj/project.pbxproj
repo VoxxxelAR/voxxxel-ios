@@ -15,7 +15,8 @@
 		75C17CEA1F9F6949001AA380 /* SceneViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C17CE91F9F6949001AA380 /* SceneViewPresenter.swift */; };
 		75C17CEC1F9F695B001AA380 /* SceneViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C17CEB1F9F695B001AA380 /* SceneViewInteractor.swift */; };
 		75C17CEE1F9F6965001AA380 /* SceneViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C17CED1F9F6965001AA380 /* SceneViewRouter.swift */; };
-		75C17CF01F9F69A2001AA380 /* SceneView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75C17CEF1F9F69A2001AA380 /* SceneView.storyboard */; };
+		F70DB9FF1FA5F0F2006D7201 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F70DB9FE1FA5F0F2006D7201 /* Main.storyboard */; };
+		F70DBA031FA5F181006D7201 /* SceneView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F70DBA021FA5F181006D7201 /* SceneView.storyboard */; };
 		F71F4EBA1F93BA81009CD84C /* VoxxxelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71F4EB91F93BA81009CD84C /* VoxxxelTests.swift */; };
 		F71F4ECF1F93BADF009CD84C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F71F4ECB1F93BADF009CD84C /* Assets.xcassets */; };
 		F71F4ED01F93BADF009CD84C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F71F4ECC1F93BADF009CD84C /* LaunchScreen.storyboard */; };
@@ -86,7 +87,8 @@
 		75C17CE91F9F6949001AA380 /* SceneViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneViewPresenter.swift; sourceTree = "<group>"; };
 		75C17CEB1F9F695B001AA380 /* SceneViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneViewInteractor.swift; sourceTree = "<group>"; };
 		75C17CED1F9F6965001AA380 /* SceneViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneViewRouter.swift; sourceTree = "<group>"; };
-		75C17CEF1F9F69A2001AA380 /* SceneView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SceneView.storyboard; sourceTree = "<group>"; };
+		F70DB9FE1FA5F0F2006D7201 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		F70DBA021FA5F181006D7201 /* SceneView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SceneView.storyboard; sourceTree = "<group>"; };
 		F71F4EA11F93BA80009CD84C /* Voxxxel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Voxxxel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F71F4EB51F93BA81009CD84C /* VoxxxelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoxxxelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F71F4EB91F93BA81009CD84C /* VoxxxelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoxxxelTests.swift; sourceTree = "<group>"; };
@@ -134,7 +136,7 @@
 		75C17CE61F9F670B001AA380 /* SceneView */ = {
 			isa = PBXGroup;
 			children = (
-				75C17CEF1F9F69A2001AA380 /* SceneView.storyboard */,
+				F70DBA021FA5F181006D7201 /* SceneView.storyboard */,
 				75C17CE71F9F68A2001AA380 /* SceneViewController.swift */,
 				75C17CE91F9F6949001AA380 /* SceneViewPresenter.swift */,
 				75C17CEB1F9F695B001AA380 /* SceneViewInteractor.swift */,
@@ -197,6 +199,7 @@
 				F71F4ECB1F93BADF009CD84C /* Assets.xcassets */,
 				F71F4ECC1F93BADF009CD84C /* LaunchScreen.storyboard */,
 				F71F4ECE1F93BADF009CD84C /* Info.plist */,
+				F70DB9FE1FA5F0F2006D7201 /* Main.storyboard */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -363,9 +366,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75C17CF01F9F69A2001AA380 /* SceneView.storyboard in Resources */,
+				F70DBA031FA5F181006D7201 /* SceneView.storyboard in Resources */,
 				F71F4ED01F93BADF009CD84C /* LaunchScreen.storyboard in Resources */,
 				F71F4ECF1F93BADF009CD84C /* Assets.xcassets in Resources */,
+				F70DB9FF1FA5F0F2006D7201 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

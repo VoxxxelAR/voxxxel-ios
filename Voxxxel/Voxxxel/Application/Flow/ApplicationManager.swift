@@ -12,26 +12,15 @@ import UIKit
 @UIApplicationMain
 class ApplicationManager: NSObject {
     
-    private static var singleInstance: ApplicationManager = ApplicationManager()
-    
     var window: UIWindow?
-    
     var initialModule: ModuleInput!
-    
-    @IBOutlet weak var initialViewController: UIViewController! {
-        didSet { configure() }
-    }
-    
-    private override init() { super.init() }
-    
-    override func awakeAfter(using aDecoder: NSCoder) -> Any? {
-        return ApplicationManager.singleInstance
-    }
-    
-    func configure() {
-        initialModule = try? SceneViewRouter.moduleInput(with: initialViewController)
-    }
 }
 
 
-extension ApplicationManager: UIApplicationDelegate { }
+extension ApplicationManager: UIApplicationDelegate {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
+        guard let rootViewController = window?.rootViewController else { return false }
+        initialModule = try? SceneViewRouter.moduleInput(with: rootViewController)
+        return true
+    }
+}

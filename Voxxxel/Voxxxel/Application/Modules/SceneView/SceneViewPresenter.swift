@@ -33,17 +33,13 @@ class SceneViewPresenter: NSObject, Presenter {
     var lastPlatformEulerAngles = SCNVector3(0, 0, 0)
     
     var sceneManager: VKSceneManager!
-    
-    override init() {
-        super.init()
-        sceneManager.delegate = self
-    }
 }
 
 extension SceneViewPresenter: SceneViewOutput {
 
     func viewDidLoad() {
         sceneManager = VKSceneManager(with: view.sceneView)
+        sceneManager.delegate = self
     }
     
     func viewDidAppear() {

@@ -42,7 +42,6 @@ open class SceneViewController: UIViewController, View {
     weak var statusView: UIView?
     weak var statusLabel: UILabel?
 
-    
     override open func viewDidLoad() {
         super.viewDidLoad()
         output.viewDidLoad()

@@ -14,3 +14,15 @@ protocol View: class {
     
     static var storyboardName: String { get }
 }
+
+extension UIViewController {
+    func specific<T>() throws -> T {
+        guard let specified = self as? T else {
+            //TODO : - Change to error
+            fatalError()
+        }
+        
+        return specified
+    }
+}
+

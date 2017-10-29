@@ -11,22 +11,28 @@ import UIKit
 protocol SceneViewRouterInput: class {
 }
 
+//TODO: - Move to extension
+extension UIStoryboard {
+    static func specificView<T: View>() throws -> T {
+        guard let view = UIStoryboard(name: T.storyboardName, bundle: nil).instantiateInitialViewController() as? T else {
+            //TODO: - Creatae storyboard error
+            fatalError()
+        }
+        
+        return view
+    }
+}
+
 class SceneViewRouter: Router, SceneViewRouterInput {
     typealias ModuleView = SceneViewController
     
     static func moduleInput<T>() throws -> T {
-        guard let view = UIStoryboard(name: ModuleView.storyboardName, bundle: nil).instantiateInitialViewController() else {
-            throw RouterError.wrongView
-        }
-        
+        let view: ModuleView = try UIStoryboard.specificView()
         return try SceneViewRouter.moduleInput(with: view)
     }
     
     static func moduleInput<T>(with view: UIViewController) throws -> T {
-        guard let view = view as? ModuleView else {
-            throw RouterError.wrongView
-        }
-        
+        let view: ModuleView = try view.specific()
         let presenter = SceneViewPresenter()
         let interactor = SceneViewInteractor()
         let router = SceneViewRouter()
@@ -42,3 +48,4 @@ class SceneViewRouter: Router, SceneViewRouterInput {
         return try presenter.specific()
     }
 }
+
